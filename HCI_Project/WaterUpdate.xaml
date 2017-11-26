@@ -41,8 +41,8 @@
         <Button x:Name="btnCup" Click="btnCup_Click" Content="cup" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24" IsEnabled="False"/>
         <Button x:Name="btnOz" Click="btnOz_Click" Content="oz"  Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
 
-        <Button x:Name="btnAdd" Content="Add" Grid.Column="2" Grid.RowSpan="3" Click="btnAdd_Click" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
-        <Button x:Name="btnRemove" Click="btnRemove_Click" Content="Remove" Grid.Row="3" Grid.Column="2" Grid.RowSpan="3" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="20"/>
+        <Button x:Name="btnAdd" Content="Add" Grid.Column="2" Grid.RowSpan="3" Click="btnAdd_Click" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="16"/>
+        <Button x:Name="btnRemove" Click="btnRemove_Click" Content="Remove" Grid.Row="3" Grid.Column="2" Grid.RowSpan="3" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="16"/>
 
     </Grid>
 </Page>

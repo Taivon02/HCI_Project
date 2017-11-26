@@ -37,10 +37,10 @@
             </Button.RenderTransform>
         </Button>
 
-        <Label x:Name="lbHours" Content="Hours" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Kokila" FontSize="24" Foreground="#FFB3B3B3"/>
+        <Label x:Name="lbHours" Content="Hours" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Kokila" FontSize="20" Foreground="#FFB3B3B3"/>
 
-        <Button x:Name="btnAdd" Content="Add" Grid.Column="2" Grid.RowSpan="3" Click="btnAdd_Click" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
-        <Button x:Name="btnRemove" Click="btnRemove_Click" Content="Remove" Grid.Row="3" Grid.Column="2" Grid.RowSpan="3" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="20"/>
+        <Button x:Name="btnAdd" Content="Add" Grid.Column="2" Grid.RowSpan="3" Click="btnAdd_Click" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="16"/>
+        <Button x:Name="btnRemove" Click="btnRemove_Click" Content="Remove" Grid.Row="3" Grid.Column="2" Grid.RowSpan="3" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="16"/>
 
     </Grid>
 </Page>

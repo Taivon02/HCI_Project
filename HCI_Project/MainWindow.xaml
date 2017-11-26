@@ -35,7 +35,7 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <Label x:Name="lblLevel" Content="Level 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="36" Foreground="#FFB3B3B3" FontFamily="Kokila" FontWeight="Bold"/>
+                    <Label x:Name="lblLevel" Content="Level 0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="24" Foreground="#FFB3B3B3" FontFamily="Kokila" FontWeight="Bold" Height="40" Margin="0,4,0,29" Grid.RowSpan="2" RenderTransformOrigin="0.352,0.588"/>
 
                     <ProgressBar x:Name="pbLevelBar" Grid.Row="1" Height="20" Width="125" Foreground="#FF504F4F" Background="#FF26316B" RenderTransformOrigin="0.5,0.5">
                         <ProgressBar.BorderBrush>
@@ -45,7 +45,7 @@
                             </LinearGradientBrush>
                         </ProgressBar.BorderBrush>
                     </ProgressBar>
-                    <Label Grid.Row="1" Grid.Column="1" Content="exp" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.467,0.855" Foreground="#FFB3B3B3" FontFamily="Kokila" FontSize="18" Margin="5,9,0,-1" FontWeight="Bold">
+                    <Label Grid.Row="1" Grid.Column="1" Content="exp" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderTransformOrigin="0.467,0.855" Foreground="#FFB3B3B3" FontFamily="Kokila" FontSize="16" Margin="0,10,0,-1" FontWeight="Bold">
                         <Label.RenderTransform>
                             <TransformGroup>
                                 <ScaleTransform/>
@@ -75,7 +75,7 @@
                             <RowDefinition Height="591"/>
                         </Grid.RowDefinitions>
                         <Image x:Name="imgBuddy" Margin="0,-104,0,103" Source="/images/buddy_lvl_1.png"/>
-                        <Button x:Name="btnHistory" Content="Progress" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Width="128" RenderTransformOrigin="0.5,0.5" FontSize="30" Click="btnHistoryButton_Click" Margin="132,294,120,265" Foreground="#FF10152E" FontFamily="Kokila" BorderBrush="Black" Background="#FFB3B3B3" FontWeight="Bold">
+                        <Button x:Name="btnHistory" Content="Progress" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Height="46" Width="152" FontSize="30" Click="btnHistoryButton_Click" Foreground="#FF10152E" FontFamily="Kokila" BorderBrush="Black" Background="#FFB3B3B3" FontWeight="Bold">
                             <Button.RenderTransform>
                                 <TransformGroup>
                                     <ScaleTransform/>
@@ -105,13 +105,13 @@
                                 <ColumnDefinition Width="15"/>
                             </Grid.ColumnDefinitions>
                             <Button x:Name="btnTracker0" Grid.Row="1" Grid.Column="1" Content="+" Click="btnTracker_Click" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker1" Grid.Row="1" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker2" Grid.Row="3" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker3" Grid.Row="3" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker4" Grid.Row="5" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker5" Grid.Row="5" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker6" Grid.Row="7" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
-                            <Button x:Name="btnTracker7" Grid.Row="7" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="#FFB3B3B3" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker1" Grid.Row="1" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker2" Grid.Row="3" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker3" Grid.Row="3" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker4" Grid.Row="5" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker5" Grid.Row="5" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker6" Grid.Row="7" Grid.Column="1" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
+                            <Button x:Name="btnTracker7" Grid.Row="7" Grid.Column="3" Content="+" Click="btnTracker_Click" Visibility="Hidden" Tag="empty" Background="#FFB3B3B3" Foreground="#FF10152E" BorderBrush="Black" FontFamily="Kokila" FontSize="72"/>
 
 
                         </Grid>

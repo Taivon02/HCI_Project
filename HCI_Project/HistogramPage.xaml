@@ -29,17 +29,31 @@
     </Page.Resources>
     <Frame x:Name="frmSwater" ContentRendered="frmSwater_ContentRendered">
         <Frame.Content>
-            <Grid RenderTransformOrigin="0.516,0.515">
-                <Button x:Name="btnBack" Content="Back" Template="{StaticResource ButtonTemplate}" Click="btnBack_Click" Height="48"
-                        Width="72"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
-                <Button x:Name="btnWater" Content="Water" Template="{StaticResource WaterTemplate}" Height="48" Width="50" Click="btnWater_Click"
-                        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,10,0"/>
-                <Button x:Name="btnSleep" Content="Sleep" Template="{StaticResource SleepTemplate}" Height="48" Width="56" Click="btnSleep_Click"
-                        HorizontalAlignment="Center" VerticalAlignment="Top" Margin="265,10,76,0"/>
-                <Separator Margin="10,46,10,594"/>
-                <TabControl HorizontalAlignment="Left" Height="560" Margin="0,93,0,0" VerticalAlignment="Top" Width="397">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="7*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FF504F4F"/>
+                        <GradientStop Color="#FF10152E" Offset="1"/>
+                    </RadialGradientBrush>
+                </Grid.Background>
+                <Button x:Name="btnBack" Content="&lt;" Click="btnBack_Click" FontFamily="Kokila" FontSize="60" Background="{x:Null}" Foreground="#FFB3B3B3" FontWeight="Bold" BorderBrush="{x:Null}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <Button x:Name="btnWater" Grid.Column="2" Content="Water" Template="{StaticResource WaterTemplate}" Height="48" Width="50" Click="btnWater_Click"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Button x:Name="btnSleep" Grid.Column="3" Content="Sleep" Template="{StaticResource SleepTemplate}" Height="48" Width="56" Click="btnSleep_Click"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TabControl Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="4">
                     <TabItem Header="Today">
-                        <Grid Background="#FFE5E5E5" Margin="0,0,-161,-331">
+                        <Grid Background="#FFE5E5E5">
                             <chartingToolkit:Chart x:Name="Histogram1" HorizontalAlignment="Left" Height="473" Title="History" Foreground="Green" VerticalAlignment="Top" Width="383">
                                 <chartingToolkit:Chart.Axes>
                                     <chartingToolkit:LinearAxis Orientation="Y" Title="Goal Completion" ShowGridLines="True"/>
