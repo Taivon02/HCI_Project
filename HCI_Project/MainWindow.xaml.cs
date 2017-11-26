@@ -157,7 +157,7 @@ namespace HCIProject
 
         private void btnHistoryButton_Click(object sender, RoutedEventArgs e)
         {
-            frmMain.Navigate(new HistogramPage(frmMain));
+            frmMain.Navigate(new HistogramPage(this));
         }
 
 

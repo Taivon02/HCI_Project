@@ -30,9 +30,10 @@ namespace HCIProject
         {
             Mon = 1, Tue = 2, Wed, Thur, Fri, Sat, Sun
         }
-        public HistogramPage(Frame frm)
+        public HistogramPage(MainWindow main)
         {
-            parent = frm;
+            mw = main;
+            parent = mw.frmMain;
 
             InitializeComponent();
             createHistogram();
@@ -41,6 +42,10 @@ namespace HCIProject
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
+            mw.imgBuddy.Source = new BitmapImage(
+                new Uri(@"/images/buddy_lvl_5.png", UriKind.Relative));
+            mw.lblLevel.Content = "Level 5";
+            mw.pbLevelBar.Value = 75;
             parent.GoBack();
         }
         private void frmSwater_ContentRendered(object sender, EventArgs e)

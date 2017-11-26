@@ -74,11 +74,7 @@
                             <RowDefinition Height="591"/>
                             <RowDefinition Height="591"/>
                         </Grid.RowDefinitions>
-                        <Image x:Name="imgBuddy" Margin="0,-104,0,103">
-                            <Image.Source>
-                                <BitmapImage UriSource="/images/buddy.png"/>
-                            </Image.Source>
-                        </Image>
+                        <Image x:Name="imgBuddy" Margin="0,-104,0,103" Source="/images/buddy_lvl_1.png"/>
                         <Button x:Name="btnHistory" Content="Progress" HorizontalAlignment="Center" VerticalAlignment="Center" Height="32" Width="128" RenderTransformOrigin="0.5,0.5" FontSize="30" Click="btnHistoryButton_Click" Margin="132,294,120,265" Foreground="#FF10152E" FontFamily="Kokila" BorderBrush="Black" Background="#FFB3B3B3" FontWeight="Bold">
                             <Button.RenderTransform>
                                 <TransformGroup>
