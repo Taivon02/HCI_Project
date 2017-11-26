@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace HCI_Project.Properties
+namespace HCIProject.Properties
 {
 
 

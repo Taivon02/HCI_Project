@@ -1,0 +1,48 @@
+﻿<Page x:Class="HCIProject.WaterUpdate"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:HCIProject"
+      mc:Ignorable="d" 
+      d:DesignHeight="150" d:DesignWidth="250"
+      MinHeight="150" MinWidth="250"
+      Title="WaterUpdate">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Button x:Name="btnUp" Click="btnUp_Click" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Content="^" Background="#FF10152E" BorderBrush="{x:Null}" Foreground="#FFB3B3B3" FontFamily="Kokila" FontSize="72" FontWeight="Bold"/>
+        <TextBox x:Name="txtEntry" Grid.Row="2" Grid.Column="0" Grid.RowSpan="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="24" />
+        <Button x:Name="btnDown" Click="btnDown_Click" Grid.Row="4" Grid.Column="0" Grid.RowSpan="2" Content="^" Background="#FF10152E" BorderBrush="{x:Null}" Foreground="#FFB3B3B3" FontFamily="Kokila" FontSize="72" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+        <Button x:Name="btnLiter" Click="btnLiter_Click" Content="liter" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
+        <Button x:Name="btnCup" Click="btnCup_Click" Content="cup" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24" IsEnabled="False"/>
+        <Button x:Name="btnOz" Click="btnOz_Click" Content="oz"  Grid.Row="4" Grid.Column="1" Grid.RowSpan="2" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
+
+        <Button x:Name="btnAdd" Content="Add" Grid.Column="2" Grid.RowSpan="3" Click="btnAdd_Click" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="24"/>
+        <Button x:Name="btnRemove" Click="btnRemove_Click" Content="Remove" Grid.Row="3" Grid.Column="2" Grid.RowSpan="3" Background="#FFB3B3B3" BorderBrush="Black" Foreground="#FF10152E" FontFamily="Kokila" FontSize="20"/>
+
+    </Grid>
+</Page>
