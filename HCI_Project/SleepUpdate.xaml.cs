@@ -66,12 +66,21 @@ namespace HCIProject
         }
         private void btnRemove_Click(object sender, RoutedEventArgs e)
         {
+            parent = window.popTrackerPop;
             if (hours != 0)
             {
-                //re-enables the main for use
-                window.frmMain.IsEnabled = true;
-                //closes out the popup holding this page
-                parent.IsOpen = false;
+                if (parent.IsOpen == true)
+                {
+                    //re-enables the main for use
+                    window.frmMain.IsEnabled = true;
+                    //closes out the popup holding this page
+                    parent.IsOpen = false;
+                }
+                else if (hparent.IsOpen == true)
+                {
+                    hp.frmSwater.IsEnabled = true;
+                    hparent.IsOpen = false;
+                }
             }
         }
         private void btnUp_Click(object sender, RoutedEventArgs e)
